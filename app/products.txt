@@ -1,0 +1,12 @@
+sample_products = [
+    {"name": "Classic Masala Chai", "description": "A traditional blend of black tea and spices.", "price": 4.99, "image": "product_images/masala_chai.jpg"},
+    {"name": "Ginger Chai", "description": "Black tea with a robust ginger flavor.", "price": 5.49, "image": "product_images/ginger_chai.jpg"},
+    {"name": "Cardamom Chai", "description": "Black tea infused with cardamom.", "price": 5.99, "image": "product_images/cardamom_chai.jpg"},
+    {"name": "Honey Chai", "description": "Black tea with a touch of honey for sweetness.", "price": 6.49, "image": "product_images/honey_chai.jpg"},
+    {"name": "Vanilla Chai", "description": "A smooth blend with vanilla flavoring.", "price": 5.99, "image": "product_images/vanilla_chai.jpg"},
+    {"name": "Mint Chai", "description": "Black tea with refreshing mint.", "price": 4.99, "image": "product_images/mint_chai.jpg"},
+    {"name": "Rose Chai", "description": "Black tea with a subtle hint of rose petals.", "price": 6.99, "image": "product_images/rose_chai.jpg"},
+    {"name": "Lemon Chai", "description": "Black tea with a tangy lemon flavor.", "price": 4.99, "image": "product_images/lemon_chai.jpg"},
+    {"name": "Cinnamon Chai", "description": "Black tea with cinnamon spice.", "price": 5.49, "image": "product_images/cinnamon_chai.jpg"},
+    {"name": "Saffron Chai", "description": "A luxurious blend with saffron.", "price": 7.99, "image": "product_images/saffron_chai.jpg"},
+]

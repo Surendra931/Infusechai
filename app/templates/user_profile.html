@@ -1,0 +1,18 @@
+<!-- app/templates/user_profile.html -->
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>Your Profile</h2>
+    <p>Username: {{ user.username }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Mobile: {{ user.userprofile.mobile }}</p>  <!-- Assuming you have a mobile field in UserProfile -->
+    <!-- Add more profile information as needed -->
+</div>
+{% endblock %}
+
+{% block footer %}
+<footer class="bg-light text-center py-3" style="position: fixed; bottom: 0; width: 100%;">  
+    <p>&copy; 2024 Infuse Chai. All rights reserved.</p>  
+</footer>
+{% endblock %}

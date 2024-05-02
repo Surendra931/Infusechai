@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<div class="container" style="min-height: 70vh;">  <!-- Ensures content is tall enough to push footer down -->
+    <h2>Order Details</h2>
+    <p>Order ID: {{ order.id }}</p>  <!-- Display order ID -->
+    <p>Ordered by: {{ order.user.username }}</p>  <!-- Display user who placed the order -->
+    <p>Shipping Address: {{ order.address }}</p>  <!-- Display shipping address -->
+    <p>Payment Type: {{ order.payment_type }}</p>  <!-- Display payment type -->
+    <p>Total Amount: ₹{{ order.total_amount }}</p>  <!-- Display total order amount -->
+
+    <!-- Additional space at the bottom -->
+    <br>
+    <br>
+    <br>
+</div>
+{% endblock %}
+
+{% block footer %}
+<footer class="bg-light text-center py-3" style="position: fixed; bottom: 0; width: 100%;">  <!-- Fixed footer at the bottom -->
+    <p>&copy; 2024 Infuse Chai. All rights reserved.</p>  <!-- Footer content -->
+</footer>
+{% endblock %}
+

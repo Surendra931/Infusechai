@@ -1,0 +1,75 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container my-5">
+    <h2>About Infuse Chai</h2>
+    <p>At Infuse Chai, we are dedicated to bringing the authentic taste of chai to all chai lovers. Our passion for tea drives us to source the finest ingredients and craft unique blends that delight the senses.</p>
+    
+    <!-- Image section -->
+    <div class="row my-4">  <!-- Row for images -->
+        <div class="col-md-6">
+            <img src="{% static 'images/tea_blends.jpeg' %}" class="img-fluid rounded" alt="Tea Blends">  <!-- A visually appealing image -->
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/tea_shop.png' %}" class="img-fluid rounded" alt="Tea Shop">  <!-- Another image -->
+        </div>
+    </div>
+
+    <!-- Mission statement -->
+    <h3>Our Mission</h3>
+    <p>Our mission is to create a space where everyone can experience the joy and warmth of traditional chai. We believe in blending modern flavors with classic techniques to offer a unique tea experience.</p>
+
+    <!-- Team section -->
+    <h3>Meet Our Team</h3>
+    <p>Our team is made up of passionate tea enthusiasts who love what they do. From our expert tea blenders to our friendly staff, we're all committed to providing the best service and products.</p>
+
+    <!-- Team members -->
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'images/team_member_1.png' %}" class="img-fluid rounded-circle" alt="Preethy Shetty" style="width: 180px; height: 180px;">  <!-- Smaller image -->
+            <h4>Preethy Shetty</h4>
+            <p>Founder & Master Blender</p>
+            <p>Preethy has a deep understanding of tea blending and has been experimenting with flavors for over a decade. She ensures that every blend is crafted with care and attention to detail.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'images/team_member_2.png' %}" class="img-fluid rounded-circle" alt="Aryan Rajesh" style="width: 180px; height: 180px;">  <!-- Smaller image -->
+            <h4>Aryan Rajesh</h4>
+            <p>Head of Operations</p>
+            <p>Aryan oversees the day-to-day operations at Infuse Chai. With his keen eye for efficiency, he ensures that everything runs smoothly, from sourcing ingredients to customer service.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'images/team_member_3.png' %}" class="img-fluid rounded-circle" alt="Jia Sharma" style="width: 180px; height: 180px;">  <!-- Smaller image -->
+            <h4>Jia Sharma</h4>
+            <p>Customer Relations</p>
+            <p>Jia is the friendly face of Infuse Chai. She is always ready to listen to customer feedback and ensure that every customer leaves with a smile.</p>
+        </div>
+    </div>
+
+    <!-- Values section -->
+    <h3>Our Values</h3>
+    <p>We value quality, tradition, and community. We strive to create products that bring people together and remind them of the simple joys of sharing a cup of chai. Our commitment to sustainability and ethical sourcing is at the core of everything we do.</p>
+    
+    <!-- Additional content for values with images -->
+    <div class="row my-6 ">  <!-- Row for images related to values -->
+        <div class="col-md-3">
+            <img src="{% static 'images/ethical_sourcing.png' %}" class="img-fluid rounded" alt="Ethical Sourcing" style="width: 180px; height: 180px;border-radius: 25%;">
+        </div>
+        <div class="col-md-3">
+          <img src="{% static 'images/community.png' %}" class="img-fluid rounded" alt="Community" style="width: 180px; height: 180px;border-radius: 25%;">
+        </div>
+        <div class="col-md-3">
+          <img src="{% static 'images/chai_logo.png' %}" class="img-fluid rounded" alt="Ethical Sourcing" style="width: 180px; height: 180px;border-radius: 25%;">
+      </div>
+      <div class="col-md-3">
+        <img src="{% static 'images/community_2.jpeg' %}" class="img-fluid rounded" alt="Community" style="width: 180px; height: 180px;border-radius: 25%;">
+      </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+<footer class="text-center py-4 footer" class="bg-light text-center py-3" style="position: fixed; bottom: 0; width: 100%;"> 
+    <p>&copy; 2024 Infuse Chai. All rights reserved.</p>  
+</footer>
+{% endblock %}

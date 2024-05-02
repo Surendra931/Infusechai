@@ -1,0 +1,48 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<div class="container mt-4"> 
+    <h2>Your Cart</h2>
+    <div class="row">  
+        {% for item in cart_items %}
+            <div class="col-md-12 mb-4">  
+                <div class="card">
+                    <div class="row no-gutters"> 
+                        <div class="col-md-8"> 
+                            <div class="card-body">
+                                <h5 class="card-title">{{ item.product.name }}</h5>  
+                                <p>Price: ₹{{ item.product.price }}</p>  
+                                <p>Quantity: {{ item.quantity }}  
+                                <p>Total Price: ₹{{ item.total_price }}</p> 
+                            </div>
+                        </div>
+                        <div class="col-md-4">  
+                            <img src="{{ item.product.image.url }}" class="img-fluid rounded" alt="{{ item.product.name }}" style="max-width: 150px;">  
+                        </div>
+                    </div>
+                    <div class="card-footer">  
+                        <form method="post" action="{% url 'remove_from_cart' item.id %}"> 
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger">Remove</button>  
+                        </form>
+                        <a href="{% url 'confirm_order' %}?item={{ item.id }}" class="btn btn-primary float-right">Confirm Order</a> 
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    
+    <div class="row mt-4"> 
+        <div class="col-md-12 text-right">  
+            <h4>Total Cost: ₹{{ total_cost }}</h4>  
+            <a href="{% url 'confirm_order' %}" class="btn btn-primary">Confirm Entire Order</a>  
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+<footer class="text-center py-4 footer" class="bg-light text-center py-3" style="position: fixed; bottom: 0; width: 100%;">
+    <p>&copy; 2024 Infuse Chai. All rights reserved.</p>  
+</footer>
+{% endblock %}
